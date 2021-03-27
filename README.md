@@ -21,7 +21,7 @@ stderr=serial
 
 * https://deviwiki.com/wiki/ZIO_FreeZIO (It can run WeVO W2914NS v2 firmware without any modification)
 * https://openwrt.org/toh/hwdata/zio/zio_freezio (Be careful. 2021-03-27 Development Snapshot build bricked the router. Infinite reboot)
-
+* https://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt7621/openwrt-19.07.7-ramips-mt7621-w2914nsv2-squashfs-sysupgrade.bin (OpenWRT stable release for WeVO W2914NS v2)
 
 ## Pinout
 
@@ -45,7 +45,7 @@ ls /dev/tty.*
 screen /dev/tty.usbserial-146130 57600 8N1
 ```
 
-I set up TFTP server with WeVO W2914NS v2 stable release. (https://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt7621/openwrt-19.07.7-ramips-mt7621-w2914nsv2-squashfs-sysupgrade.bin)
+I set up TFTP server with Openwrt 19.07.2 stable release for WeVO W2914NS v2. (https://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt7621/openwrt-19.07.7-ramips-mt7621-w2914nsv2-squashfs-sysupgrade.bin)
 
 ![TFTP64](/img/tftp64.jpg)
 
