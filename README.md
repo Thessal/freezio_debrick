@@ -28,6 +28,13 @@ stderr=serial
 
 Identical to WeVO W2914NS v2
 
+
+## Wiring 
+
+* CH340G USB to TTL converter ($2, https://www.devicemart.co.kr/goods/view?no=1321026)
+* 2mm socket jumper cables
+* Hook clip grabbers & Thick copper wire 
+
 ```
 # CH340G USB to TTL converter
 brew tap adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver
@@ -36,8 +43,6 @@ brew cask install wch-ch34x-usb-serial-driver
 ls /dev/tty.*
 screen /dev/tty.usbserial-146130 57600 8N1
 ```
-
-## Wiring 
 
 I set up TFTP server with WeVO W2914NS v2 stable release. (https://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt7621/openwrt-19.07.7-ramips-mt7621-w2914nsv2-squashfs-sysupgrade.bin)
 
