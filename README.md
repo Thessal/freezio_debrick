@@ -1,9 +1,10 @@
 # FreeZIO router firmware
 
-OpenWRT Recovery method for ZIO Freezio 
+OpenWRT Recovery method for ZIO FreeZIO router (TFTP method using serial console)
+
 
 ```
-U-boot default config for ZIO Freezio
+U-boot default config for ZIO FreeZio
 
 bootcmd=tftp
 bootdelay=5
