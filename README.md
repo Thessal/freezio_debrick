@@ -52,8 +52,6 @@ I set up TFTP server with WeVO W2914NS v2 stable release. (https://downloads.ope
 * serverip is 192.168.1.2 in my case, but you may use **10.10.10.3**
 
 
-(But )
-
 ## Flashing
 
 ### 1. Enter 4(boot command line interface) and configure ip. reset.
