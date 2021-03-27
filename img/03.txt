@@ -1,0 +1,162 @@
+001C:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+001D:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+001E:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+001F:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+rank 0 coarse = 15
+rank 0 fine = 72
+B:|    0    0    0    0    0    0    0    0    0    0    1    1    1    0    0    0
+opt_dle value:11
+DRAMC_R0DELDLY[018]=00001F1F
+==================================================================
+                RX      DQS perbit delay software calibration
+==================================================================
+1.0-15 bit dq delay value
+==================================================================
+bit|     0  1  2  3  4  5  6  7  8  9
+--------------------------------------
+0 |    9 6 7 9 7 7 7 6 5 7
+10 |    8 10 8 10 7 9
+--------------------------------------
+
+==================================================================
+2.dqs window
+x=pass dqs delay value (min~max)center
+y=0-7bit DQ of every group
+input delay:DQS0 =31 DQS1 = 31
+==================================================================
+bit     DQS0     bit      DQS1
+0  (1~61)31  8  (1~59)30
+1  (1~57)29  9  (1~59)30
+2  (1~57)29  10  (1~60)30
+3  (1~59)30  11  (1~60)30
+4  (1~59)30  12  (1~59)30
+5  (1~58)29  13  (1~58)29
+6  (1~58)29  14  (1~62)31
+7  (1~60)30  15  (1~60)30
+==================================================================
+3.dq delay value last
+==================================================================
+bit|    0  1  2  3  4  5  6  7  8   9
+--------------------------------------
+0 |    9 8 9 10 8 9 9 7 6 8
+10 |    9 11 9 12 7 10
+==================================================================
+==================================================================
+     TX  perbyte calibration
+==================================================================
+DQS loop = 15, cmp_err_1 = ffff2205
+DQS loop = 14, cmp_err_1 = ffff2000
+dqs_perbyte_dly.last_dqsdly_pass[0]=14,  finish count=1
+DQS loop = 13, cmp_err_1 = ffff0000
+dqs_perbyte_dly.last_dqsdly_pass[1]=13,  finish count=2
+DQ loop=15, cmp_err_1 = ffff0000
+dqs_perbyte_dly.last_dqdly_pass[0]=15,  finish count=1
+dqs_perbyte_dly.last_dqdly_pass[1]=15,  finish count=2
+byte:0, (DQS,DQ)=(8,8)
+byte:1, (DQS,DQ)=(8,9)
+20,data:88
+[EMI] DRAMC calibration passed
+
+===================================================================
+                MT7621   stage1 code done
+                CPU=500000000 HZ BUS=166666666 HZ
+===================================================================
+
+
+U-Boot 1.1.3 (May 25 2017 - 13:23:21)
+
+Board: Ralink APSoC DRAM:  128 MB
+relocate_code Pointer at: 87fb8000
+
+Config XHCI 40M PLL
+******************************
+Software System Reset Occurred
+******************************
+flash manufacture id: c2, device id 20 18
+find flash: MX25L12805D
+============================================
+Ralink UBoot Version: 5.0.0.0
+--------------------------------------------
+ASIC MT7621A DualCore (MAC to MT7530 Mode)
+DRAM_CONF_FROM: Auto-Detection
+DRAM_TYPE: DDR3
+DRAM bus: 16 bit
+Xtal Mode=3 OCP Ratio=1/3
+Flash component: SPI Flash
+Date:May 25 2017  Time:13:23:21
+============================================
+icache: sets:256, ways:4, linesz:32 ,total:32768
+dcache: sets:256, ways:4, linesz:32 ,total:32768
+
+ ##### The CPU freq = 880 MHZ ####
+ estimate memory size =128 Mbytes
+#Reset_MT7530
+set LAN/WAN LLLLW
+
+Please choose the operation:
+   1: Load system code to SDRAM via TFTP.
+   2: Load system code then write to Flash via TFTP.
+   3: Boot system code via Flash (default).
+   4: Entr boot command line interface.
+   7: Load Boot Loader code then write to Flash via Serial.
+   9: Load Boot Loader code then write to Flash via TFTP.                                                                                                                                                        4
+You choosed 2
+                                                                                                                                                                                                                 0
+
+
+2: System Load Linux Kernel then write to Flash via TFTP.
+ Warning!! Erase Linux in Flash then burn new one. Are you sure?(Y/N)
+ Please Input new ones /or Ctrl-C to discard
+        Input device IP (192.168.1.1) ==:192.168.1.1
+        Input server IP (192.168.1.2) ==:192.168.1.2
+        Input Linux Kernel filename (openwrt.bin) ==:openwrt.bin
+
+ NetTxPacket = 0x87FE49C0
+
+ KSEG1ADDR(NetTxPacket) = 0xA7FE49C0
+
+ NetLoop,call eth_halt !
+
+ NetLoop,call eth_init !
+Trying Eth0 (10/100-M)
+
+ Waitting for RX_DMA_BUSY status Start... done
+
+
+ ETH_STATE_ACTIVE!!
+TFTP from server 192.168.1.2; our IP address is 192.168.1.1
+Filename 'openwrt.bin'.
+
+ TIMEOUT_COUNT=10,Load address: 0x80100000
+Loading: checksum bad
+checksum bad
+checksum bad
+checksum bad
+checksum bad
+checksum bad
+checksum bad
+checksum bad
+checksum bad
+checksum bad
+checksum bad
+Got ARP REPLY, set server/gtwy eth addr (98:83:89:48:18:5a)
+Got it
+#################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         #################################################################
+         ############
+done
+Bytes transferred = 4718858 (48010a hex)
+LoadAddr=80100000 NetBootFileXferSize= 0048010a
+.

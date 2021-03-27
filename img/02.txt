@@ -1,0 +1,67 @@
+icache: sets:256, ways:4, linesz:32 ,total:32768
+dcache: sets:256, ways:4, linesz:32 ,total:32768
+
+ ##### The CPU freq = 880 MHZ ####
+ estimate memory size =128 Mbytes
+#Reset_MT7530
+set LAN/WAN LLLLW
+
+Please choose the operation:
+   1: Load system code to SDRAM via TFTP.
+   2: Load system code then write to Flash via TFTP.
+   3: Boot system code via Flash (default).
+   4: Entr boot command line interface.
+   7: Load Boot Loader code then write to Flash via Serial.
+   9: Load Boot Loader code then write to Flash via TFTP.
+
+You choosed 4
+                                                                              0
+
+
+4: System Enter Boot Command Line Interface.
+
+U-Boot 1.1.3 (May 25 2017 - 13:23:21)
+MT7621 # printenv
+bootcmd=tftp
+bootdelay=5
+baudrate=57600
+ethaddr="00:AA:BB:CC:DD:10"
+ipaddr=10.10.10.123
+serverip=10.10.10.3
+stdin=serial
+stdout=serial
+stderr=serial
+
+Environment size: 149/4092 bytes
+MT7621 # set ipaddr 192.168.1.1
+MT7621 # set serverip 192.168.1.2
+MT7621 # saveenv
+Saving Environment to SPI Flash...
+Erasing SPI Flash...
+.
+Writing to SPI Flash...
+.
+done
+MT7621 # reboot
+Unknown command 'reboot' - try 'help'
+MT7621 # help
+?       - alias for 'help'
+bootm   - boot application image from memory
+cp      - memory copy
+erase   - erase SPI FLASH memory
+go      - start application at address 'addr'
+help    - print online help
+loadb   - load binary file over serial line (kermit mode)
+md      - memory display
+mdio   - Ralink PHY register R/W command !!
+mm      - memory modify (auto-incrementing)
+nm      - memory modify (constant address)
+printenv- print environment variables
+reset   - Perform RESET of the CPU
+rf      - read/write rf register
+saveenv - save environment variables to persistent storage
+setenv  - set environment variables
+spi     - spi command
+tftpboot- boot image via network using TFTP protocol
+version - print monitor version
+MT7621 # reset
