@@ -1,4 +1,4 @@
-# FreeZIO router firmware
+# FreeZIO router flashing via TFTP
 
 OpenWRT Recovery method for ZIO FreeZIO router (TFTP method using serial console)
 
