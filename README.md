@@ -154,7 +154,7 @@ checksum bad
 checksum bad
 checksum bad
 checksum bad
-Got ARP REPLY, set server/gtwy eth addr (98:83:89:48:18:5a)
+Got ARP REPLY, set server/gtwy eth addr (00:00:00:00:00:00)
 Got it
 #################################################################
          #################################################################
